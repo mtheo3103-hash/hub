@@ -1,93 +1,113 @@
-<html>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Projects Hub</title>
 
-    <!-- Project 1: MetaSpoof -->
-    <div class="bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/5 flex flex-col justify-between group">
-        <div>
-            <div class="flex items-start justify-between mb-3">
-                <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-2.5 rounded-xl shadow-lg shadow-indigo-500/20 text-white">
-                    <i class="fa-solid fa-user-secret text-lg"></i>
+    <!-- Tailwind CSS (für das Design & Layout) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (für die Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-slate-900 min-h-screen p-6 md:p-12 text-slate-100 flex items-center justify-center">
+
+    <!-- Container für max. Breite -->
+    <div class="max-w-4xl w-full mx-auto">
+        
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Project 1: MetaSpoof -->
+            <div class="bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/5 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-2.5 rounded-xl shadow-lg shadow-indigo-500/20 text-white">
+                            <i class="fa-solid fa-user-secret text-lg"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">MetaSpoof</h3>
+                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                        A 100% client-side web tool to inspect, fake, or completely wipe EXIF metadata & GPS location from photos (JPG, PNG, WEBP, HEIC). Zero server uploads.
+                    </p>
+
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Privacy</span>
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">EXIF / GPS</span>
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
+                    </div>
                 </div>
-                <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
-                    <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
-                </span>
-            </div>
 
-            <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">MetaSpoof</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-                A 100% client-side web tool to inspect, fake, or completely wipe EXIF metadata & GPS location from photos (JPG, PNG, WEBP, HEIC). Zero server uploads.
-            </p>
-
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-1.5 mt-4">
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Privacy</span>
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">EXIF / GPS</span>
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
-            </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
-            <a href="https://metaspoof.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                <span>Launch App</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
-            <a href="https://github.com/mtheo3103/metaspoof" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                <i class="fa-brands fa-github"></i>
-                <span>Source</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Project 2: Convi -->
-    <div class="bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-emerald-500/5 flex flex-col justify-between group">
-        <div>
-            <div class="flex items-start justify-between mb-3">
-                <div class="bg-gradient-to-tr from-emerald-500 to-teal-400 p-2.5 rounded-xl shadow-lg shadow-emerald-500/20 text-white flex items-center justify-center">
-                    <i class="fa-solid fa-bolt text-lg"></i>
+                <!-- Action Buttons -->
+                <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
+                    <a href="https://metaspoof.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                        <span>Launch App</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                    <a href="https://github.com/mtheo3103/metaspoof" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Source</span>
+                    </a>
                 </div>
-                <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
-                    <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
-                </span>
             </div>
 
-            <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">SocketRaid</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-                The #1 Kahoot spammer. No ads, no popups, 100% safe.
-            </p>
+            <!-- Project 2: Converti -->
+            <div class="bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-emerald-500/5 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="bg-gradient-to-tr from-emerald-500 to-teal-400 p-2.5 rounded-xl shadow-lg shadow-emerald-500/20 text-white flex items-center justify-center">
+                            <i class="fa-solid fa-bolt text-lg"></i>
+                        </div>
+                        <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
+                        </span>
+                    </div>
 
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-1.5 mt-4">
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Web Tool</span>
-                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Utilities</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">SocketRaid</h3>
+                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                        The #1 Kahoot spammer. No ads, no popups. 100% safe to use.
+                    </p>
+
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Web Tool</span>
+                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Utilities</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
+                    <a href="https://socketraid.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                        <span>Launch App</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                    <a href="https://github.com/mtheo3103-hash/socketraid" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Source</span>
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- Action Buttons -->
-        <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
-            <a href="https://socketraid.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                <span>Launch App</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
-            <a href="https://github.com/mtheo3103-hash/socketraid" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                <i class="fa-brands fa-github"></i>
-                <span>Source</span>
-            </a>
+            <!-- Always Last: Placeholder Card -->
+            <div class="order-last bg-slate-800/20 border border-slate-800/80 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
+                <div class="w-12 h-12 bg-slate-800/50 rounded-full flex items-center justify-center text-slate-600 mb-3">
+                    <i class="fa-solid fa-code text-lg"></i>
+                </div>
+                <h3 class="text-sm font-semibold text-slate-400">Next Project Loading...</h3>
+                <p class="text-slate-600 text-xs mt-1 max-w-xs">
+                    More web applications and privacy-focused tools are currently in development.
+                </p>
+            </div>
+
         </div>
     </div>
 
-    <!-- Always Last: Placeholder Card -->
-    <div class="order-last bg-slate-800/20 border border-slate-800/80 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
-        <div class="w-12 h-12 bg-slate-800/50 rounded-full flex items-center justify-center text-slate-600 mb-3">
-            <i class="fa-solid fa-code text-lg"></i>
-        </div>
-        <h3 class="text-sm font-semibold text-slate-400">Next Project Loading...</h3>
-        <p class="text-slate-600 text-xs mt-1 max-w-xs">
-            More web applications and privacy-focused tools are currently in development.
-        </p>
-    </div>
-
-</div>
-<html>
+</body>
+</html>

@@ -1,99 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mtheo3103 — Projects & Web Tools</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-    <!-- Top Glow Effect -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-64 bg-indigo-500/10 blur-3xl pointer-events-none rounded-full"></div>
-
-    <main class="max-w-4xl w-full mx-auto px-4 py-12 relative z-10">
-        
-        <!-- Profile Header -->
-        <div class="text-center mb-12">
-            <div class="inline-block relative mb-4">
-                <div class="w-24 h-24 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 rounded-full p-1 shadow-xl shadow-indigo-500/20">
-                    <!-- GitHub Avatar / Placeholder -->
-                    <img src="https://github.com/mtheo3103.png" alt="mtheo3103 Avatar" class="w-full h-full rounded-full object-cover bg-slate-800" onerror="this.src='https://ui-avatars.com/api/?name=mtheo3103&background=0D8ABC&color=fff'">
+    <!-- Project 1: MetaSpoof -->
+    <div class="bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/5 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-start justify-between mb-3">
+                <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-2.5 rounded-xl shadow-lg shadow-indigo-500/20 text-white">
+                    <i class="fa-solid fa-user-secret text-lg"></i>
                 </div>
+                <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
+                    <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
+                </span>
             </div>
-            
-            <h1 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">mtheo3103</h1>
-            <p class="text-indigo-400 font-medium text-sm mt-1">Developer & Web Tools Creator</p>
-            <p class="text-slate-400 text-xs max-w-md mx-auto mt-3 leading-relaxed">
-                Welcome to my personal project hub. Here you’ll find my latest web applications, client-side privacy tools, and open-source software.
+
+            <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">MetaSpoof</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                A 100% client-side web tool to inspect, fake, or completely wipe EXIF metadata & GPS location from photos (JPG, PNG, WEBP, HEIC). Zero server uploads.
             </p>
 
-            <!-- Social Links Bar -->
-            <div class="flex items-center justify-center space-x-3 mt-5">
-                <a href="https://github.com/mtheo3103" target="_blank" rel="noopener noreferrer" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 text-slate-300 hover:text-white px-3.5 py-1.5 rounded-full text-xs font-medium transition flex items-center space-x-2">
-                    <i class="fa-brands fa-github text-sm"></i>
-                    <span>GitHub</span>
-                </a>
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Privacy</span>
+                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">EXIF / GPS</span>
+                <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
             </div>
         </div>
 
-        <!-- Section Title -->
-        <div class="flex items-center justify-between mb-6">
-            <h2 class="text-base font-bold text-white flex items-center">
-                <i class="fa-solid fa-rocket text-indigo-400 mr-2"></i> Featured Web Apps
-            </h2>
-            <span class="text-xs text-slate-500">More coming soon</span>
+        <!-- Action Buttons -->
+        <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
+            <a href="https://metaspoof.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                <span>Launch App</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <a href="https://github.com/mtheo3103/metaspoof" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
+                <i class="fa-brands fa-github"></i>
+                <span>Source</span>
+            </a>
         </div>
+    </div>
 
-        <!-- Projects Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            <!-- Project 1: MetaSpoof -->
-            <div class="bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/5 flex flex-col justify-between group">
-                <div>
-                    <div class="flex items-start justify-between mb-3">
-                        <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-2.5 rounded-xl shadow-lg shadow-indigo-500/20 text-white">
-                            <i class="fa-solid fa-user-secret text-lg"></i>
-                        </div>
-                        <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center">
-                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse"></span> Live
-                        </span>
-                    </div>
-
-                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">MetaSpoof</h3>
-                    <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-                        A 100% client-side web tool to inspect, fake, or completely wipe EXIF metadata & GPS location from photos (JPG, PNG, WEBP, HEIC). Zero server uploads.
-                    </p>
-
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-1.5 mt-4">
-                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">Privacy</span>
-                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">EXIF / GPS</span>
-                        <span class="bg-slate-900/80 text-slate-400 text-[10px] px-2 py-0.5 rounded-md border border-slate-800">JavaScript</span>
-                    </div>
-                </div>
-
-                <!-- Action Buttons -->
-                <div class="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-800">
-                    <a href="https://metaspoof.onrender.com" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                        <span>Launch App</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                    <a href="https://github.com/mtheo3103/metaspoof" target="_blank" rel="noopener noreferrer" class="bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-300 text-xs font-semibold py-2 px-3 rounded-xl transition text-center flex items-center justify-center space-x-1">
-                        <i class="fa-brands fa-github"></i>
-                        <span>Source</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 2: Convi -->
+    <!-- Project 2: Convi -->
 <div class="bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-200 hover:shadow-xl hover:shadow-emerald-500/5 flex flex-col justify-between group">
     <div>
         <div class="flex items-start justify-between mb-3">
@@ -132,14 +78,15 @@
     </div>
 </div>
 
+    <!-- Always Last: Placeholder Card -->
+    <div class="order-last bg-slate-800/20 border border-slate-800/80 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[260px]">
+        <div class="w-12 h-12 bg-slate-800/50 rounded-full flex items-center justify-center text-slate-600 mb-3">
+            <i class="fa-solid fa-code text-lg"></i>
         </div>
+        <h3 class="text-sm font-semibold text-slate-400">Next Project Loading...</h3>
+        <p class="text-slate-600 text-xs mt-1 max-w-xs">
+            More web applications and privacy-focused tools are currently in development.
+        </p>
+    </div>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-800/60 py-6 text-center text-xs text-slate-600 relative z-10">
-        <p>Hub hosted by <a href="https://github.com/mtheo3103-hash/" target="_blank" class="text-slate-400 hover:underline">mtheo3103</a> &copy; Built with Tailwind CSS</p>
-    </footer>
-
-</body>
-</html>
+</div>
